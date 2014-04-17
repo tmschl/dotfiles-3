@@ -1,0 +1,6 @@
+# Example of basic function. Make directory and move into directory
+mcd () {
+    mkdir -p $1
+    cd $1
+}
+
