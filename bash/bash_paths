@@ -39,8 +39,4 @@ unset dirs_to_prepend dirs_to_append
 
 export PATH
 
-# fix this
-export WORKON_HOME=~/Sites/envs
-source /usr/local/bin/virtualenvwrapper.sh > /dev/null
-
-[[ -s /Users/robbschiller/.nvm/nvm.sh ]] && . /Users/robbschiller/.nvm/nvm.sh
+[[ -s /Users/tim/.nvm/nvm.sh ]] && . /Users/tim/.nvm/nvm.sh
