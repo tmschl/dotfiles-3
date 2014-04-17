@@ -188,4 +188,4 @@ Inspiration and code was taken from many sources, including:
 
 * [@necolas](https://github.com/necolas/dotfiles) (Nicolas Gallagher)
 * [@wilto](https://github.com/Wilto/dotfiles) (Mat Marquis)
-* [@robbschiller](https://github.com/robbschiller/dotfiles) (Tim Schiller)
+* [@robbschiller](https://github.com/robbschiller/dotfiles) (Robb Schiller)
