@@ -27,7 +27,7 @@ SOLAR_WHITE=$(tput setaf 254)
 
 style_user="\[${RESET}${SOLAR_ORANGE}\]"
 style_host="\[${RESET}${SOLAR_YELLOW}\]"
-style_path="\[${RESET}${SOLAR_GREEN}\]"
+style_path="\[${RESET}${SOLAR_CYAN}\]"
 style_chars="\[${RESET}${SOLAR_WHITE}\]"
 style_branch="${SOLAR_CYAN}"
 
@@ -60,7 +60,7 @@ get_git_branch() {
     printf $branch_name
 }
 
-# Git status information
+# Git status informaton
 prompt_git() {
     local git_info git_state uc us ut st
 
@@ -72,17 +72,17 @@ prompt_git() {
 
     # Check for uncommitted changes in the index
     if ! $(git diff --quiet --ignore-submodules --cached); then
-        uc="${SOLAR_GREEN}+"
+        uc="${SOLAR_BLUE}+"
     fi
 
     # Check for unstaged changes
     if ! $(git diff-files --quiet --ignore-submodules --); then
-        us="${SOLAR_RED}!"
+        us="${SOLAR_WHITE}!"
     fi
 
     # Check for untracked files
     if [ -n "$(git ls-files --others --exclude-standard)" ]; then
-        ut="${SOLAR_ORANGE}?"
+        ut="${SOLAR_WHITE}?"
     fi
 
     # Check for stashed files
@@ -117,5 +117,5 @@ prompt_git() {
 PS1="\n" # Newline
 PS1+="${style_path}\w" # Working directory
 PS1+="\$(prompt_git)" # Git details
-PS1+="\n" # Newline
+PS1+=" " # Add Space after git deets
 PS1+="${style_chars}\$ \[${RESET}\]" # $ (and reset color)
