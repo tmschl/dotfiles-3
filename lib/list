@@ -1,0 +1,39 @@
+#!/bin/bash
+
+run_list() {
+
+cat <<EOT
+
+OS X dotfiles - Robb Schiller - http://robbschiller.com/
+
+Additional software to install
+
+Browsers:
+    Firefox
+    FirefoxNightly
+    Google Chrome
+    Google Chrome Canary
+    Opera
+
+Development:
+    Xcode
+    ImageOptim
+    Anvil
+    Mou
+
+Design:
+    LayerVault
+    Sketch
+    Skala Preview
+    LiveView
+
+Other:
+    Alfred
+    Moom
+    CloudApp
+    Dropbox
+    LimeChat
+
+EOT
+
+}
