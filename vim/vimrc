@@ -1,3 +1,11 @@
 " .vimrc
 
+execute pathogen#infect()
+
+set nocompatible
+
+:set hlsearch
+
+:syntax on
+
 
