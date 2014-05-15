@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/tim/Code/Personal/tmschl.github.io/_layouts'
+let g:netrw_dirhist_2='/Users/tim/Code/ak/nuxInstallBower/app/bower_components'
+let g:netrw_dirhist_3='/Users/tim/Code/Personal/tmschl.github.io/_layouts'
+let g:netrw_dirhist_4='/Users/tim/.dotfiles/vim/autoload'
+let g:netrw_dirhist_5='/Users/tim/Code/Personal/baileyJS/app'
+let g:netrw_dirhist_6='/Users/tim/Code/Personal/ng-start/shellDir'
+let g:netrw_dirhist_7='/Users/tim/Code/Personal/tmschl.github.io/node_modules/grunt/lib/grunt'

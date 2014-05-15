@@ -1,11 +1,42 @@
 " .vimrc
+ set nocompatible
 
-execute pathogen#infect()
+" set runtime location for pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 
-set nocompatible
+" start pathogen
+call pathogen#infect()
 
-:set hlsearch
+if has('autocmd')
+  filetype on
+  filetype indent on
+  filetype plugin on
+endif
 
-:syntax on
+syntax on
 
+colorscheme github
 
+set background=light
+
+let g:gitgutter_enabled = 1
+
+if has('cmdline_info')
+  set ruler
+  set showcmd
+  set showmode
+endif
+
+if has('statusline')
+  set laststatus=2
+  set statusline=%<%f\
+  set statusline+=%w%h%m%r
+  set statusline+=\ [%{getcwd()}]
+  set statusline+=%=%-14.(%l.%c%V%)\ %p%%
+endif
+
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set number
+set cursorline
