@@ -124,8 +124,8 @@ export PATH
 # Git credentials
 # Not under version control to prevent people from
 # accidentally committing with your details
-GIT_AUTHOR_NAME="Robb Schiller"
-GIT_AUTHOR_EMAIL="robb@example.com"
+GIT_AUTHOR_NAME="Tim Schiller"
+GIT_AUTHOR_EMAIL="tim@example.com"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 # Set the credentials (modifies ~/.gitconfig)
